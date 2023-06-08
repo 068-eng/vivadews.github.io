@@ -1,0 +1,340 @@
+<!Doctype html>
+<html>
+<head>
+<link rel="icon" href="pix/logo/goldc.png" type="image/icon type"><!-- adding logo to title bar-->
+	<title>Hire form us</title>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!--- where my css came into play-->
+	<style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 10px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 110px; background: #225;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 100px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+	
+	/* Creating special effects for some of my text and background too*/
+	.deck{
+		background-image:url("room.jpg");
+		background-repeat:no-repeat;
+		background-size:cover;
+		font-family:Amperzand;
+		font-size:20px;
+		color:#324;
+	}
+	
+	#table{
+		background-image:url("room.jpg");
+		background-repeat:no-repeat;
+		background-size:cover;
+		width:100%;
+		background-color"#324;
+	}
+	
+	
+	
+	
+	#wrapper {
+		float:left;
+		margin: 0 auto;
+		padding: 0 3.5%;
+	}
+
+	#pop_up{
+		perspective: 500px;
+	}
+
+	#pop_up:img {
+		transition: 50ms;
+		box-shadow: 0px 0px 0px rgba(0,0,0,0);
+	}
+
+	#pop_up img:hover {
+		transform: translate3d(10px,0px,20px);  
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	}
+	
+	
+	/*img pop up when mouse is on*/
+	img {
+		position:relative;
+		
+		border: 0px solid #ddd;
+		border-radius: 30px;
+		padding: 15px;
+	}
+	
+	/*positioning text on image*/
+	.bottomright {
+		position: absolute;
+		bottom: 25px;
+		right: 30px;
+		font-size: 18px;
+		color:#225;
+		font-family:
+	}
+	
+	
+    </style>
+</head>
+
+<body class="w3-black">
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <!--<img src="pix/1.png" style="width:100%">-->
+  <a href="main.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="main.html#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="main.html#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="main.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+  <a href="main.html#purchase" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-paper-plane w3-xxlarge"></i>
+    <p>PURCHASE</p>
+  </a>
+  <a href="main.html/#hire" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-paper-plane-o w3-xxlarge"></i>
+    <p>HIRE</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+	<a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">PURCHASE</a>
+	<a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">HIRE</a>
+  </div>
+</div>
+<div class="w3-padding-large" id="main">
+<!--Logo and search bar and Shoping chart-->
+  <table border="0" id="table" class="img" width="100%">
+  <tr><td><a href="main.html"><image src="pix/logo/goldc.png" title="We are into sales/leasing of equipments, kitchen utensils, interior decoration and more." alt="Vivadews Interior Home Decorations" width="190px"/></a></td>
+  <td align="right" width="40%">
+  <!--Where the search bar started-->
+	
+		<div class="header-search-form-wrapper">
+			<div class="searchform-wrapper ux-search-box relative form-flat is-normal">
+			<form role="search" method="get" class="searchform" action="https://vivadews.com/">
+			<div class="flex-row relative">
+					<div class="flex-col search-form-categories">
+				<select class="search_categories resize-select mb-0" name="product_cat" style="width: 59.5676px;"><option value="" selected="selected">All</option><option value="electronics">Electronics</option><option value="fashion">Fashion</option><option value="groceries">Groceries</option><option value="household-items">Household Items</option><option value="laptop-and-phone">Laptops and Phones</option><option value="uncategorized">Other</option><option value="shoes">Shoes</option></select>			</div>
+						<div class="flex-col flex-grow">
+					<label class="screen-reader-text" for="Vivadews-earch-field-0">Search for:</label>
+					<input type="search" id="vivadews-product-search-field-0" class="search-field mb-0" placeholder="Search for Products" value="" name="s" autocomplete="off">
+						<input type="hidden" name="post_type" value="product">
+					</div>
+					<div class="flex-col">
+					<button type="submit" value="Search" class="ux-search-submit submit-button secondary button icon mb-0" aria-label="Submit">
+				<i class="icon-search"></i></button>
+				</div>
+				</div>
+				<div class="live-search-results text-left z-top"><div class="autocomplete-suggestions" style="position: absolute; display: none; max-height: 300px; z-index: 9999;"></div></div>
+			</form>
+		</div></div>
+	<!--where it Ended-->
+  
+  
+	</td><td align="right"width="10%">
+		<a class="fa fa-cart-plus w3-xxlarge w3-button w3-padding-large w3-hover-black" align="right"></a>
+	</td></tr>
+	<!--<tr >
+	<td colspan="3"><img src="pix/ghost.png" style="aling:center" width="70%"/></td>
+	</tr>-->
+	<tr><td colspan="3"><marquee direction="right" behaviour="relative" scrolldelay="1s"><hr style="height:10px; width:1000px; border:none; background-color:#225; "></marquee></td></tr>
+	
+	<!--products for sale in pix form-->
+	<tr><td colspan="3" width="100%">
+	<div id="wrapper">
+		<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/basin.png" title="Iron Basin" alt="Iron Basin"/>
+	<div class="bottomright"><b><i>Basin &#8358;100</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/bpot.png" title="Pot" alt="Pot"/>
+	<div class="bottomright"><b><i>Big Pot  &#8358;200<br/>Medium Pot &#8358;150<br/>Small Pot &#8358;100</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/bristle_brush.png"title="Bristle Brush" alt="Bristle Brush"/>
+	<div class="bottomright"><b><i>Bristle Brush &#8358;100</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/broom.png" title="Broo" alt="Broom"/>
+	<div class="bottomright"><b><i>Broom &#8358;50</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/bucket.png"title=" Iron Bucket" alt="Iron Bucket"/>
+	<div class="bottomright"><b><i>Iron Bucket &#8358;100</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/cooking_spoon.png" title="Cooking Spoon" alt="Cooking spoon"/>
+	<div class="bottomright"><b><i>Cooking Spoon &#8358;50</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/cylinder.png" title="Filled Gas Cylinder" alt="Filled Gas Cylinder"/>
+	<div class="bottomright"><b><i>2Kg Gas &#8358;2000</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/drum200.png" title="Water Drum" alt="Water Drum"/>
+	<div class="bottomright"><b><i>Water Drum &#8358;300</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/extension.png" title="Extension" alt="Extension"/>
+	<div class="bottomright"><b><i>Extension &#8358;200</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/food_flask.png" title="Iron Flask" alt="Food Flask"/>
+	<div class="bottomright"><b><i>Food Flask &#8358;200</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/frypan.png" title="Frying Pan" alt="Non-Sticky Fry Pan"/>
+	<div class="bottomright"><b><i>Non-Sticky<br/> frying pan &#8358;100</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/garri_stick.png" title="Garri Stick" alt="Garri Stick"/>
+	<div class="bottomright"><b><i>Garri Stick &#8358;50</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/grater.png" title="Grater" alt="Grater"/>
+	<div class="bottomright"><b><i>Grater &#8358;100</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/hand_grinder.png" title="Hand Grinder" alt="Hand Grinder"/>
+	<div class="bottomright"><b><i>Hand Grinder &#8358;100</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/iron.png" title="Iron" alt="Iron"/>
+	<div class="bottomright"><b><i>Iron &#8358;200</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/iron_cup.png" title="Iron Cup" alt="Iron Cup"/>
+	<div class="bottomright"><b><i>Cups &#8358;50</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/jerrican.png" title="Jerrican" alt="Jerrican"/>
+	<div class="bottomright"><b><i>Jerrican &#8358;100</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/kettle.png" title="Kettle" alt="Kettle"/>
+	<div class="bottomright"><b><i>Kettle(5L) &#8358;100</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/kitchen_chair.png" title="Kitchen Chair" alt="Kitchen Chair"/>
+	<div class="bottomright"><b><i>Kitchen Chair &#8358;50</i></b></div>
+	</div></div><div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/knife.png" title="Knife" alt="Knife"/>
+	<div class="bottomright"><b><i>Knife &#8358;50</i></b></div>
+	</div></div><div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/Lpot_stand.png" title="Large pot Stand" alt="Large Pot Stand"/>
+	<div class="bottomright"><b><i>Large Pot<br/>Stand &#8358;300</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/morta_pistel.png" title="Murter & Pistol" alt="Murter & Pistol"/>
+	<div class="bottomright"><b><i>Murter & Pistol &#8358;100</i></b></div>
+	</div></div><div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/packer.png" title="Packer" alt="Packer"/>
+	<div class="bottomright"><b><i>Packer &#8358;50</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/pillow.png" title="Pillow" alt="Pillow"/>
+	<div class="bottomright"><b><i>Pillow &#8358;100</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/plates.png" title="Plates" alt="Plates"/>
+	<div class="bottomright"><b><i>Dip/Flat Plate &#8358;50</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/seive.png" title="Seive" alt="Iron Seive"/>
+	<div class="bottomright"><b><i>Seive &#8358;100</i></b></div>
+	</div></div>
+	<div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/sfoam.png" title="Student foam" alt="Student Foam"/>
+	<div class="bottomright"><b><i>Student Foam &#8358;500</i></b></div>
+	</div></div><div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/sponge.png" title="Sponge" alt="Sponge"/>
+	<div class="bottomright"><b><i>Sponge Free</i></b></div>
+	</div></div><div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/towel.png" title="Small Body Towel" alt=" Small body Towel"/>
+	<div class="bottomright"><b><i>Small Body<br/>Towel Free</i></b></div>
+	</div></div><div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/tray.png" title="Tray" alt="Tray"/>
+	<div class="bottomright"><b><i>Tray &#8358;100</i></b></div>
+	</div></div><div id="wrapper">
+	<div id="pop_up">
+	<img style="width:250px;height:250px;" src="pix/products/water_flask.png" title="Water Flask" alt="Water Flask"/>
+	<div class="bottomright"><b><i>Wate Flask &#8358;200</i></b></div>
+	</div></div>
+	</td></tr>
+	
+<tr><td colspan="3"><hr style="color:red;"/>	
+<div> 
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+ <p class="w3-small">This website was designed by Franklin Engineering services </p>
+ <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="" target="_blank">Contact-Us</a> 
+ <!-- End footer -->
+</footer>
+<!-- END PAGE CONTENT -->
+</div>
+</td></tr>
+</table>
+</div>
+</body>
+
+</html>

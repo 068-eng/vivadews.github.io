@@ -1,0 +1,93 @@
+<!Doctype html>
+<html>
+<head>
+	<link rel="icon" href="pix/logo/goldc.png" type="image/icon type"><!-- adding logo to title bar-->
+	<title>Vivadews Interior Home Decorations</title>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 10px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 110px; background: #225;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 100px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+	
+	/* Creating special effects for some of my text and background too*/
+	.deck{
+	background-image:url("room.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	font-family:Amperzand;
+	font-size:20px;
+	color:#324;
+	}
+	
+	#table{
+	background-image:url("room.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;	
+	}
+	
+	 /* Three image containers (use 25% for four, and 50% for two, etc) */
+	.column {
+	float: left;
+	width: 50%;
+	padding: 5px;
+	}
+
+	/* Clear floats after image containers */
+	.row::after {
+	content: "";
+	clear: both;
+	display: table;
+	} 
+    </style>
+</head>
+
+<body class="w3-black">
+	<!--Logo and search bar and Shoping chart-->
+  <table border="0" id="table" class="img" >
+  <tr><td><image src="pix/logo/goldc.png" title="We are into sales/leasing of equipments, kitchen utensils, interior decoration and more." alt="Vivadews Interior Home Decorations" width="190"/></td>
+  <td align="right" width="40%">
+  <!--Where the search bar started-->
+	
+		<div class="header-search-form-wrapper">
+			<div class="searchform-wrapper ux-search-box relative form-flat is-normal">
+			<form role="search" method="get" class="searchform" action="https://vivadews.com/">
+			<div class="flex-row relative">
+					<div class="flex-col search-form-categories">
+				<select class="search_categories resize-select mb-0" name="product_cat" style="width: 59.5676px;"><option value="" selected="selected">All</option><option value="electronics">Electronics</option><option value="fashion">Fashion</option><option value="groceries">Groceries</option><option value="household-items">Household Items</option><option value="laptop-and-phone">Laptops and Phones</option><option value="uncategorized">Other</option><option value="shoes">Shoes</option></select>			</div>
+						<div class="flex-col flex-grow">
+					<label class="screen-reader-text" for="Vivadews-earch-field-0">Search for:</label>
+					<input type="search" id="vivadews-product-search-field-0" class="search-field mb-0" placeholder="Search for Products" value="" name="s" autocomplete="off">
+						<input type="hidden" name="post_type" value="product">
+					</div>
+					<div class="flex-col">
+					<button type="submit" value="Search" class="ux-search-submit submit-button secondary button icon mb-0" aria-label="Submit">
+				<i class="icon-search"></i></button>
+				</div>
+				</div>
+				<div class="live-search-results text-left z-top"><div class="autocomplete-suggestions" style="position: absolute; display: none; max-height: 300px; z-index: 9999;"></div></div>
+			</form>
+		</div></div>
+	<!--where it Ended-->
+  
+  
+	</td><td align="right"width="10%">
+		<a class="fa fa-cart-plus w3-xxlarge w3-button w3-padding-large w3-hover-black" align="right"></a>
+	</td></tr>
+	<tr >
+	<td colspan="3"><img src="pix/ghost.png" style="aling:center" width="70%"/></td>
+	</tr>
+	</table>
+	
+</body>
+
+</html>
